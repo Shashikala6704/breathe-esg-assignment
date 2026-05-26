@@ -1,0 +1,6 @@
+TravelDate,EmployeeID,Mode,From,To,Distance_km,Quantity,Unit,Class
+2026-04-01,EMP101,Flight,HYD,DEL,1250,1250,km,Economy
+2026-04-02,EMP102,Hotel,Bangalore,Bangalore,2,2,nights,Business
+2026-04-03,EMP103,Taxi,Mumbai,Pune,150,150,km,Standard
+2026-04-04,EMP104,Flight,DEL,SIN,4150,4150,km,Business
+2026-04-05,EMP105,Flight,HYD,BLR,0,0,km,Economy

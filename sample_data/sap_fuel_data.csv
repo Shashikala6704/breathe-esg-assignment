@@ -1,0 +1,6 @@
+Date,PlantCode,FuelType,Quantity,Unit,Vendor
+2026-04-01,PLT1001,Diesel,500,L,Shell
+2026-04-02,PLT1002,Petrol,0,L,BP
+2026-04-03,PLT1003,Natural Gas,1200,m3,Exxon
+2026-04-04,PLT1004,Diesel,850,L,Shell
+2026-04-05,PLT1005,Coal,1500,kg,Adani

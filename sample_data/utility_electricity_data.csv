@@ -1,0 +1,5 @@
+BillingPeriod,MeterID,Facility,Electricity_kWh,Quantity,Unit,Tariff,Cost_USD
+2026-04,MT1001,Hyderabad Office,4500,4500,kWh,Commercial,780
+2026-04,MT1002,Bangalore Plant,12000,12000,kWh,Industrial,2400
+2026-04,MT1003,Chennai Warehouse,0,0,kWh,Industrial,0
+2026-04,MT1004,Pune Office,3200,3200,kWh,Commercial,540
