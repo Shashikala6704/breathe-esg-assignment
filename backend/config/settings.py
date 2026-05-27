@@ -10,7 +10,11 @@ SECRET_KEY = 'django-insecure-%@@z1d1maie0k#qpqqh^lga4@bl+g51kiz@4f5l-0g=7)l7&j-
 
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    "127.0.0.1",
+    "localhost",
+    "breathe-esg-backend-wndl.onrender.com",
+]
 
 
 INSTALLED_APPS = [
@@ -102,3 +106,5 @@ USE_TZ = True
 STATIC_URL = 'static/'
 
 CORS_ALLOW_ALL_ORIGINS = True
+
+DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
