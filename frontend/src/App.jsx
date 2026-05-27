@@ -2,6 +2,8 @@ import { useEffect, useState } from "react";
 import axios from "axios";
 import "./App.css";
 
+const API_BASE_URL = "https://breathe-esg-backend-wndl.onrender.com";
+
 function App() {
   const [activities, setActivities] = useState([]);
   const [file, setFile] = useState(null);
@@ -14,7 +16,7 @@ function App() {
 
   const fetchActivities = async () => {
     try {
-      const response = await axios.get("http://127.0.0.1:8000/api/activities/");
+      const response = await axios.get(`${API_BASE_URL}/api/activities/`);
       setActivities(response.data);
     } catch (error) {
       console.error(error);
@@ -32,7 +34,7 @@ function App() {
     formData.append("source_type", sourceType);
 
     try {
-      await axios.post("http://127.0.0.1:8000/api/upload/", formData);
+      await axios.post(`${API_BASE_URL}/api/upload/`, formData);
       alert("CSV Uploaded Successfully");
       setFile(null);
       fetchActivities();
@@ -44,7 +46,7 @@ function App() {
 
   const updateStatus = async (id, status) => {
     try {
-      await axios.post(`http://127.0.0.1:8000/api/activities/${id}/status/`, {
+      await axios.post(`${API_BASE_URL}/api/activities/${id}/status/`, {
         status: status,
       });
 
